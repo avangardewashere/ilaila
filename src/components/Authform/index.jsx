@@ -1,9 +1,22 @@
- 
+import { Box, Container, Image, VStack } from "@chakra-ui/react";
+import logoImg from "./../../assets/images/Common/Logo.png";
 
 const AuthForm = () => {
   return (
-    <div>AuthForm</div>
-  )
-}
+    <Container>
+      <Box>
+      <VStack>
+        <div className="logo-container">
+          <Image src={logoImg} alt="logo-img" />
+        </div>
+      
 
-export default AuthForm
+   
+
+        </VStack>
+      </Box>
+    </Container>
+  );
+};
+
+export default AuthForm;
